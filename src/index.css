@@ -1,0 +1,18 @@
+
+@import "tailwindcss";
+
+/* small helper to ensure video fills area on some browsers */
+.video-fit {
+  object-fit: contain;
+}
+
+/* optional utility if you want smoother font rendering */
+html, body, #root {
+  height: 100%;
+}
+.hero-rounded {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
