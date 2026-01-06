@@ -16,7 +16,7 @@ export default function PlantFooter() {
         </h3>
 
         {/* Newsletter Input */}
-        <div className="mt-6 flex items-center justify-center">
+        {/* <div className="mt-6 flex items-center justify-center">
           <input
             type="email"
             placeholder="Email"
@@ -25,7 +25,7 @@ export default function PlantFooter() {
           <button className="bg-orange-400 px-4 py-2.5 rounded-r-md hover:bg-orange-300 transition">
             <FiSend className="text-black w-5 h-5" />
           </button>
-        </div>
+        </div> */}
 
         {/* Divider */}
         <div className="my-10 border-t border-white/30"></div>
@@ -35,10 +35,10 @@ export default function PlantFooter() {
 
           {/* Contact Column */}
           <div className="space-y-2">
-            <h4 className="font-semibold text-white/90">GreenRoot Garden Co.</h4>
-            <p className="text-white/70 text-sm">West Hill, Sector 14</p>
-            <p className="text-white/70 text-sm">Delhi, IN</p>
-            <p className="text-white/70 text-sm">+91 98765 43210</p>
+            <h4 className="font-semibold text-white/90">Visma Pesticides</h4>
+            <p className="text-white/70 text-sm"></p>
+            <p className="text-white/70 text-sm">Nashik, Maharashtra</p>
+            <p className="text-white/70 text-sm">+91 9166636435</p>
             <p className="text-white/70 text-sm">hello@greenroot.com</p>
           </div>
 
@@ -68,18 +68,30 @@ export default function PlantFooter() {
           </div>
 
           {/* Right Column - Links */}
-          <div className="space-y-2">
+          <div className="space-y-2 px-28">
             <h4 className="font-semibold text-white/90">Pages</h4>
-            <p className="text-white/70 text-sm hover:text-white transition cursor-pointer">Home</p>
-            <p className="text-white/70 text-sm hover:text-white transition cursor-pointer">Shop</p>
-            <p className="text-white/70 text-sm hover:text-white transition cursor-pointer">About</p>
+          <Link to='/'>
+            <p className="text-white/70 pb-1.5 text-sm hover:text-white transition cursor-pointer">Home</p>
+          </Link>
+          <Link to='/Gallery'>
+            <p className="text-white/70 pb-1.5 text-sm hover:text-white transition cursor-pointer">Gallery</p>
+          </Link>
+          <Link to='/products'>
+            <p className="text-white/70 pb-1.5 text-sm hover:text-white transition cursor-pointer">Products</p>
+          </Link>
+          <Link to='/about'>
+            <p className="text-white/70 pb-1.5 text-sm hover:text-white transition cursor-pointer">About</p>
+          </Link>
+          <Link to='/contact'>
             <p className="text-white/70 text-sm hover:text-white transition cursor-pointer">Contact</p>
+          </Link>
+
           </div>
         </div>
 
         {/* Bottom Line */}
         <div className="mt-10 border-t border-white/20 pt-4 text-center text-white/70 text-sm">
-          © 2025 GreenRoot Garden Co. — All Rights Reserved.
+          © 2025 Visma Pesticides — All Rights Reserved.
         </div>
 
       </div>

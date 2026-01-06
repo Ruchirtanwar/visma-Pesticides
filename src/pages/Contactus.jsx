@@ -15,7 +15,7 @@ export default function Contactus() {
       }`}
     >
       {/* HERO / HEADER */}
-      <div className="bg-[#6f0f12] text-white py-20 text-center">
+      <div className="bg-[#126c3ebc] text-white py-20 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
         <p className="text-white/80 max-w-2xl mx-auto text-lg">
           We would love to hear from you! Reach out to us for support, business
@@ -27,7 +27,7 @@ export default function Contactus() {
       <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-16">
         {/* LEFT → Contact Details */}
         <div>
-          <h2 className="text-3xl font-bold text-[#6f0f12] mb-6">
+          <h2 className="text-3xl font-bold text-[#2b5f3b] mb-6">
             Get in Touch
           </h2>
 
@@ -91,7 +91,7 @@ export default function Contactus() {
 
         {/* RIGHT → Contact Form */}
         <div>
-          <h2 className="text-3xl font-bold text-[#6f0f12] mb-6">
+          <h2 className="text-3xl font-bold text-[#2b5f3b] mb-6">
             Send Us a Message
           </h2>
 
@@ -142,7 +142,7 @@ export default function Contactus() {
 
             <button
               type="submit"
-              className="bg-[#6f0f12] text-white px-6 py-3 rounded-lg hover:bg-[#5d0d0f] transition-all"
+              className="bg-[#32775a] text-white px-6 py-3 rounded-lg hover:bg-[#5d0d0f] transition-all"
             >
               Submit
             </button>

@@ -29,7 +29,7 @@ export default function BannerSection() {
           {/* Large circle image */}
           <div className="w-52 h-52 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl">
             <img
-              src="https://images.unsplash.com/photo-1587502536590-ebb5f4c3a8cb?w=800&q=60"
+              src="https://images.unsplash.com/photo-1597916829826-02e5bb4a54e0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Large plant"
               className="w-full h-full object-cover"
             />
@@ -40,7 +40,7 @@ export default function BannerSection() {
             <img
               src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=60"
               alt="Small plant"
-              className="w-full h-full object-cover"
+              className="w-full h-full  object-cover object-[55%_55%]"
             />
           </div>
         </div>

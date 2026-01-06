@@ -3,7 +3,7 @@ import plant from "../../assets/garden-bg.jpg"; // replace with your plant image
 
 function NatureHeroShowcase() {
   return (
-    <section className="w-full bg-[#0a3c2f] text-white py-16 px-6 md:py-24">
+    <section className="w-full bg-[#0a3c2f] text-white py-14 px-6 md:py-18">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
         {/* LEFT TEXT SECTION */}
@@ -27,26 +27,49 @@ function NatureHeroShowcase() {
 
         {/* RIGHT PLANT + ARCH FRAME */}
         <div className="relative flex justify-center md:justify-end">
-          {/* Arch container */}
-          <div className="
-            bg-linear-to-b from-white to-[#e7fff5] rounded-t-[140px]
-            w-[260px] h-[380px] md:w-[320px] md:h-[480px]
-            flex items-end justify-center shadow-xl
-          ">
-            <img
-              src={plant}
-              alt="plant"
-              className="w-48 md:w-64 relative -bottom-4"
-            />
-          </div>
+   
+   {/* Arch container */}
+  <div
+    className="
+      relative z-10
+      bg-linear-to-b from-white to-[#e7fff5]
+      rounded-t-[140px]
+      w-[260px] h-[380px]
+      md:w-[320px] md:h-[480px]
+      flex items-end justify-center
+      overflow-hidden
+      shadow-2xl
+    "
+  >
+     {/* Decorative background image INSIDE arch */}
+    <img
+      src="https://images.unsplash.com/photo-1710563159928-83611beece71?q=80&w=687&auto=format&fit=crop"
+      alt="decorative background"
+      className="absolute inset-0 w-full h-full object-cover "
+    />
 
-          {/* Price badge */}
-          <div className="absolute top-10 left-6 md:left-0 md:-translate-x-1/2
-                          bg-green-700 w-20 h-20 rounded-full flex flex-col
-                          items-center justify-center shadow-lg">
-            <span className="text-xs">Price</span>
-            <span className="text-xl font-bold">$8</span>
-          </div>
+    {/* Soft overlay for premium look
+    <div className="absolute inset-0 bg-white/20" /> */}
+
+    {/* Main plant image (foreground) */}
+   {/* Plant image with soft overlay */}
+<div className="relative z-10 -bottom-6">
+  
+  {/* Plant image */}
+  <img
+    src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1170&auto=format&fit=crop"
+    alt="plant"
+    className="w-48 md:w-64 drop-shadow-xl"
+  />
+
+  {/* Soft overlay ON PLANT */}
+  <div className="absolute inset-0 bg-white/10 rounded-md pointer-events-none" />
+
+</div>
+
+
+  </div>
+        
         </div>
       </div>
 

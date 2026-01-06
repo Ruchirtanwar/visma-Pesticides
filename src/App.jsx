@@ -9,6 +9,7 @@ import Contactus from './pages/Contactus.jsx'
 import Navbar from './components/Navbar.jsx'
 import Gallery from './pages/Gallery.jsx'
 import ProductCinematicCarousel from './components/HomeComponent/ProductCarousel.jsx'
+import Solutions from './pages/Solutions.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,10 +20,10 @@ function App() {
 <Routes>
 <Route path='/' element={<Home/>}/>
  <Route path='/Gallery' element={<Gallery/>} />
-<Route path='/Solution' element={<Solution/>}/>
 <Route path='/products' element={<Products/>}/>
 <Route path='/about' element={<AboutUs/>}/>
-{/* <Route path="/products/:id" element={<ProductCinematicCarousel />} /> */}
+{/* <Route path='/Solutions' element={<Solutions/>}/> */}
+ <Route path="/Solutions/:id" element={<Solutions />} /> 
 
 <Route path='/contact' element={<Contactus/>}/>
  </Routes>

@@ -5,14 +5,16 @@ import BannerSection from '../components/ProductsComponent/BannrSection'
 import InfoSection from '../components/ProductsComponent/InfoSection'
 import CardSection from '../components/ProductsComponent/CardSection'
 import ProductsGrid from '../components/ProductsComponent/ProductsGrid'
-
+import { products } from '../components/Data/ProductData'
 const Products = () => {
   return (
     <div>
-        <NatureHeroShowcase/>
-
-<CardsCarousel/>
-<ProductsGrid/>
+ <NatureHeroShowcase/>
+{/* <CardsCarousel/>
+<ProductsGrid/> */}
+{/* 🔑 SAME DATA */}
+      <CardsCarousel items={products.filter(p => p.carousel)} />
+      <ProductsGrid items={products} />
 <BannerSection/>
 <InfoSection/>
 <CardSection/>

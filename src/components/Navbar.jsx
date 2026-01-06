@@ -57,9 +57,9 @@ const CALL_NUMBER = "tel:+919166636435";
     href={WHATSAPP_DESKTOP}
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center gap-2 bg-yellow-300 text-[#0b3a1f] px-4 py-2 rounded-md font-semibold text-sm shadow hover:brightness-95 transition"
+    className="flex items-center justify-between bg-yellow-500 text-[#0b3a1f]  px-3.5  rounded-md font-semibold text-sm shadow hover:brightness-95 transition"
   >
-    <svg className="w-4 h-4" viewBox="0 0 32 32" fill="currentColor">
+    <svg className="w-9 h-9" viewBox="2 0 28 28" fill="currentColor">
       <path d="M19.11 17.94c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.15-1.33-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.02-.22-.53-.45-.46-.61-.46h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.65 1.11 2.83c.14.18 1.93 2.95 4.68 4.13.65.28 1.15.45 1.55.58.65.21 1.25.18 1.72.11.52-.08 1.6-.65 1.83-1.27.23-.62.23-1.15.16-1.27-.07-.12-.25-.2-.52-.34z"/>
     </svg>
     WhatsApp

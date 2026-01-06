@@ -116,99 +116,128 @@
 // }
 
 // export default Hero;
+// import React from "react";
+// import bg from "../../assets/bg-hero.jpg";
+// import bg2 from "../../assets/bg-hero2.jpg"
+// import { MapPin, Mail } from "lucide-react";
+// import { Link } from "react-router-dom";
+
+// function Hero() {
+//   return (
+//     // <div className="min-h-screen flex justify-center px-4 sm:px-6 py-6 bg-[#f7f6f2]">
+//   <div className="min-h-screen bg-[#f7f6f2]">
+
+//     <div
+//       className="min-h-screen  flex items-start justify-center p-12 sm:p-13 bg-cover bg-center bg-no-repeat"
+//       style={{ backgroundImage: `url(${bg2})` }}
+//    >
+//       {/* Card */}
+//       <div className="w-full max-w-6xl rounded-3xl shadow-xl overflow-hidden">
+
+       
+
+//         {/* HERO IMAGE */}
+//         <div className="relative h-[420px] sm:h-[480px] md:h-[520px]">
+
+//           <img
+//             src={bg}
+//             alt="Hero background"
+//             className="absolute inset-0 w-full h-full object-cover"
+//           />
+
+//           {/* Overlay */}
+//           <div className="absolute inset-0 bg-black/40" />
+
+//           {/* CONTENT */}
+//           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-6 z-10">
+//             <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
+//               EVERY CROP COUNTS, <br />
+//               EVERY FARMER MATTERS
+//             </h1>
+
+//             <p className="mt-4 max-w-2xl text-white/85 text-sm sm:text-base">
+//               The paramount doctrine of the economic and technological euphoria of recent
+//               decades has been that everything depends on innovation.
+//             </p>
+
+//             <Link
+//               to="/products"
+//               className="mt-8 flex items-center gap-4 bg-white text-green-800 px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition"
+//             >
+//               <span>See Our Products</span>
+
+//               <span className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center shadow">
+//                 <svg
+//                   className="w-5 h-5"
+//                   fill="none"
+//                   stroke="currentColor"
+//                   viewBox="0 0 24 24"
+//                 >
+//                   <path
+//                     strokeWidth="2"
+//                     strokeLinecap="round"
+//                     strokeLinejoin="round"
+//                     d="M9 5l7 7-7 7"
+//                   />
+//                 </svg>
+//               </span>
+//             </Link>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//     </div>
+//   );
+// }
+
+// export default Hero;
 import React from "react";
-import bg from "../../assets/bg-hero.png";
-import { MapPin, Mail } from "lucide-react";
+import bg from "../../assets/bg-hero.jpg";      // MASK IMAGE
+import bg2 from "../../assets/bg-hero2.jpg";   // BACKGROUND IMAGE
 import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <div className="min-h-screen flex justify-center px-4 sm:px-6 py-6 bg-[#f7f6f2]">
-      {/* Card */}
-      <div className="w-full max-w-6xl rounded-3xl shadow-xl overflow-hidden">
+    <div className="min-h-screen bg-[#f7f6f2]">
+      {/* MASKED BACKGROUND */}
+      <div
+        className="min-h-screen flex items-center justify-center p-12 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${bg2})`,
 
-        {/* TOP INFO BAR */}
-        <div className="bg-white/95 text-gray-800 text-sm">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 px-4 py-3">
+          // MASK USING bg IMAGE
+          WebkitMaskImage: `url(${bg})`,
+          WebkitMaskRepeat: "no-repeat",
+          WebkitMaskSize: "cover",
+          WebkitMaskPosition: "center",
 
-            {/* Address */}
-            <div className="flex items-start gap-3">
-              <MapPin className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
-              <div>
-                <p className="font-semibold">Farm Address</p>
-                <p className="text-xs text-gray-600 leading-snug">
-                  Plot No. 45, Agro Tech Park,<br />
-                  Nashik, Maharashtra – 422010
-                </p>
-              </div>
-            </div>
+          maskImage: `url(${bg})`,
+          maskRepeat: "no-repeat",
+          maskSize: "cover",
+          maskPosition: "center",
+        }}
+      >
+        {/* CONTENT */}
+        <div className="relative z-10 text-center max-w-4xl">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">
+            EVERY CROP COUNTS, <br />
+            EVERY FARMER MATTERS
+          </h1>
 
-            {/* Email */}
-            <div className="flex items-center gap-3">
-              <Mail className="w-5 h-5 text-green-700" />
-              <p className="text-xs text-gray-600">
-                donalfarms@gmail.com
-              </p>
-            </div>
+          <p className="mt-4 text-white/85 text-sm sm:text-base">
+            The paramount doctrine of the economic and technological euphoria of recent
+            decades has been that everything depends on innovation.
+          </p>
 
-            {/* CTA */}
-            <div className="hidden sm:block">
-              <Link to="/contact">
-                <button className="bg-[#e4a648] text-white px-4 py-2 rounded-md text-xs font-medium hover:scale-105 transition">
-                  Get In Touch!
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* HERO IMAGE */}
-        <div className="relative h-[420px] sm:h-[480px] md:h-[520px]">
-
-          <img
-            src={bg}
-            alt="Hero background"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/40" />
-
-          {/* CONTENT */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-6 z-10">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
-              EVERY CROP COUNTS, <br />
-              EVERY FARMER MATTERS
-            </h1>
-
-            <p className="mt-4 max-w-2xl text-white/85 text-sm sm:text-base">
-              The paramount doctrine of the economic and technological euphoria of recent
-              decades has been that everything depends on innovation.
-            </p>
-
-            <Link
-              to="/products"
-              className="mt-8 flex items-center gap-4 bg-white text-green-800 px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition"
-            >
-              <span>See Our Products</span>
-
-              <span className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center shadow">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </span>
-            </Link>
-          </div>
+          <Link
+            to="/products"
+            className="mt-8 inline-flex items-center gap-4 bg-white text-green-800 px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition"
+          >
+            <span>See Our Products</span>
+            <span className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center shadow">
+              →
+            </span>
+          </Link>
         </div>
       </div>
     </div>
