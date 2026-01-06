@@ -10,8 +10,6 @@ const Products = () => {
   return (
     <div>
  <NatureHeroShowcase/>
-{/* <CardsCarousel/>
-<ProductsGrid/> */}
 {/* 🔑 SAME DATA */}
       <CardsCarousel items={products.filter(p => p.carousel)} />
       <ProductsGrid items={products} />

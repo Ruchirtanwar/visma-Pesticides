@@ -16,7 +16,6 @@ const Home = () => {
       <TwoImageCards/>
       <CountUpCard/>
       <BottomCard/>
- 
 
     </div>
    
